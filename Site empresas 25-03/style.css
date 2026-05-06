@@ -1,0 +1,198 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #0b0b0b, #111);
+    color: #f0f0f0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+h1 {
+    font-size: 3.2rem;
+    color: #f3c623;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(243,198,35,0.4);
+}
+
+
+h2 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 10px;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 5px;
+    height: 80%;
+    background-color: #f3c623;
+    border-radius: 5px;
+}
+
+
+h4 {
+    margin-top: 15px;
+    color: #f3c623;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+a {
+    color: #f3c623;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #fff;
+}
+
+
+button {
+    background: linear-gradient(45deg, #f3c623, #ffdd55);
+    color: #0b0b0b;
+    border: none;
+    padding: 12px 22px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(243,198,35,0.6);
+}
+
+
+input {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: 0.4s ease;
+    
+    
+    box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+    border: 2px solid transparent;
+}
+
+
+img:hover {
+    transform: scale(1.03);
+    border: 2px solid #f3c623;
+    box-shadow: 0 0 25px rgba(243,198,35,0.5);
+}
+
+
+img + footer,
+img + p {
+    text-align: center;
+    font-weight: bold;
+    color: #ccc;
+}
+
+
+video {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+}
+
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+    color: #aaa;
+}
+
+
+h2, p, img, video, a, button {
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+h1 {
+    text-align: center;
+}
+
+
+img {
+    display: block;
+    margin: 20px auto;
+}
+
+
+h4, input, button {
+    width: 300px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+input {
+    display: block;
+}
+
+
+button {
+    display: block;
+    margin-top: 10px;
+}
+
+
+h4 {
+    margin-top: 15px;
+}
